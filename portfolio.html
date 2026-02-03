@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Johanna Mari Capusi | Portfolio</title>
+	<style>
+		:root {
+			--bg: #0f172a;
+			--card: #111827;
+			--text: #e5e7eb;
+			--muted: #94a3b8;
+			--accent: #60a5fa;
+			--border: #1f2937;
+		}
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+			background: var(--bg);
+			color: var(--text);
+			line-height: 1.6;
+		}
+		header {
+			padding: 32px 24px;
+			background: var(--card);
+			border-bottom: 1px solid var(--border);
+		}
+		.header-row {
+			display: flex;
+			align-items: center;
+			gap: 16px;
+		}
+		.avatar {
+			width: 88px;
+			height: 88px;
+			border-radius: 50%;
+			object-fit: cover;
+			border: 2px solid var(--accent);
+			box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+			background: #0b1222;
+		}
+		.wrapper { max-width: 960px; margin: 0 auto; padding: 24px; }
+		h1 { margin: 0; font-size: 28px; letter-spacing: 0.5px; }
+		.sub { color: var(--muted); margin-top: 4px; }
+		.grid { display: grid; gap: 16px; }
+		.section {
+			background: var(--card);
+			border: 1px solid var(--border);
+			border-radius: 12px;
+			padding: 20px 22px;
+		}
+		.section h2 {
+			margin: 0 0 12px;
+			font-size: 18px;
+			color: var(--text);
+		}
+		.row { display: flex; gap: 12px; flex-wrap: wrap; }
+		.tag {
+			background: rgba(96,165,250,0.12);
+			color: #bfdbfe;
+			padding: 6px 10px;
+			border-radius: 999px;
+			font-size: 13px;
+		}
+		.item-title { font-weight: 600; }
+		.item-sub { color: var(--muted); font-size: 14px; }
+		ul { padding-left: 18px; margin: 8px 0; }
+		a { color: var(--accent); text-decoration: none; }
+		.contact {
+			display: grid;
+			gap: 6px;
+			font-size: 14px;
+			color: var(--muted);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="header-row">
+				<img class="avatar" src="./assets/idpic.jpg" alt="Johanna Mari Capusi headshot" />
+				<div>
+					<h1>Johanna Mari Capusi</h1>
+					<div class="sub">IT Student | Aspiring Web Developer | Laguna, PH</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="wrapper grid" style="padding-top:16px; padding-bottom:32px;">
+		<section class="section" id="about">
+			<h2>About Me</h2>
+			<p>
+				A motivated and hardworking IT student with customer service experience and a strong interest in web development.
+				Currently learning Laravel and Vue.js to build web applications and improve programming skills.
+				Passionate about technology, problem-solving, and eager to grow in the IT industry through training and mentorship.
+			</p>
+		</section>
+
+		<section class="section" id="skills">
+			<h2>Skills</h2>
+			<div class="item-title">Web &amp; Programming</div>
+			<div class="row" style="margin-bottom:10px;">
+				<span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript (Beginner)</span>
+				<span class="tag">PHP</span><span class="tag">Laravel (Beginner)</span><span class="tag">Vue.js (Beginner)</span>
+				<span class="tag">Java</span><span class="tag">C# (Beginner)</span>
+			</div>
+			<div class="item-title">Tools &amp; Platforms</div>
+			<div class="row" style="margin-bottom:10px;">
+				<span class="tag">Postman</span><span class="tag">MS Office</span><span class="tag">Google Workspace</span>
+			</div>
+			<div class="item-title">Other IT Skills</div>
+			<div class="row">
+				<span class="tag">Basic Networking</span><span class="tag">Troubleshooting</span><span class="tag">SDLC Fundamentals</span>
+			</div>
+		</section>
+
+		<section class="section" id="projects">
+			<h2>Projects</h2>
+			<div class="item-title">Capstone Project &mdash; Mushroom Marketplace (Web-Based System)</div>
+			<div class="item-sub">Laravel (backend) + Vue.js (frontend)</div>
+			<ul>
+				<li>Developed a web-based system with CRUD operations for managing data.</li>
+				<li>Implemented APIs to connect frontend and backend.</li>
+				<li>Worked with databases and basic system logic for an e-commerce style platform.</li>
+			</ul>
+		</section>
+
+		<section class="section" id="experience">
+			<h2>Experience</h2>
+			<div class="item-title">Service Crew &mdash; McDonald's Hana Cabuyao</div>
+			<div class="item-sub">January 2024 &ndash; Present</div>
+			<ul>
+				<li>Provided excellent customer service in a fast-paced environment.</li>
+				<li>Managed transactions and ensured order accuracy.</li>
+				<li>Worked collaboratively with a team to maintain efficiency.</li>
+			</ul>
+		</section>
+
+		<section class="section" id="education">
+			<h2>Education</h2>
+			<div class="item-title">Bachelor of Science in Information Technology</div>
+			<div class="item-sub">Polytechnic University of the Philippines &mdash; Biñan Campus (2022 &ndash; Present)</div>
+		</section>
+
+		<section class="section" id="certifications">
+			<h2>Certifications &amp; Training</h2>
+			<ul>
+				<li><span class="item-title">Postman API Fundamentals Student Expert</span> &mdash; January 2025</li>
+				<li><span class="item-title">CISCO &mdash; Introduction to Data Science</span> &mdash; June 2024</li>
+			</ul>
+		</section>
+
+		<section class="section" id="contact">
+			<h2>Contact</h2>
+			<div class="contact">
+				<span>Opal St. Avida Village Cerise Nuvali, Canlubang Calamba</span>
+				<span>Phone: <a href="tel:+639946430635">+63 994 643 0635</a></span>
+				<span>Email: <a href="mailto:capusijohannamari@gmail.com">capusijohannamari@gmail.com</a></span>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
